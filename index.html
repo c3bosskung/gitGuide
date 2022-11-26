@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <script src="./main.js"></script>
+    <script>
+        const changeColor = () => {
+            const changeC = document.getElementById('color');
+            changeC.setAttribute('style', 'background-color: red');
+        }
+    </script>
 </head>
-<body>
+<body style="background-color: aqua" id="color">
     <h1>Hello</h1>
+    <button onclick="changeColor()">Change Color</button>
 </body>
 </html>
